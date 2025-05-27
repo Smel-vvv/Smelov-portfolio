@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "design",
             image: "images/works/avatar.jpg",
             description: "Концепт дизайна мобильного приложения для трекинга здоровья. Основной акцент на удобстве использования и визуальной иерархии элементов.",
-            date: "Апрель 2023"
+            date: "Апрель 2025"
         },
         {
             id: 3,
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "infographic",
             image: "images/works/avatar.jpg",
             description: "Визуализация статистики по распространению COVID-19 в разных странах мира. Использованы графики и диаграммы для наглядного представления данных.",
-            date: "Март 2023"
+            date: "Март 2025"
         },
         {
             id: 4,
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "design",
             image: "images/works/avatar.jpg",
             description: "Разработка фирменного стиля для кофейни. Логотип, цветовая палитра, меню и упаковка в едином стиле.",
-            date: "Февраль 2023"
+            date: "Февраль 2025"
         },
         {
             id: 5,
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "infographic",
             image: "images/works/avatar.jpg",
             description: "Инфографика, объясняющая основные принципы работы интернета для новичков. Простым языком о сложных технологиях.",
-            date: "Январь 2023"
+            date: "Январь 2025"
         },
         {
             id: 6,
