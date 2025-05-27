@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "design",
             image: "images/works/avatar.jpg",
             description: "Концепт дизайна мобильного приложения для трекинга здоровья. Основной акцент на удобстве использования и визуальной иерархии элементов.",
-            date: "Апрель 2025"
+            date: "Апрель 2023"
         },
         {
             id: 3,
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "other",
             image: "images/works/avatar.jpg",
             description: "Серия иллюстраций для детской образовательной книги. Яркие, запоминающиеся образы, помогающие усвоить материал.",
-            date: "Декабрь 2022"
+            date: "Декабрь 2025"
         }
         
     ];
