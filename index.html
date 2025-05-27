@@ -45,7 +45,7 @@
                 <h2 class="section__title">Обо мне</h2>
                 <div class="about__inner">
                     <div class="about__photo">
-                        <img src="images/works/avatar.jpg" alt="Саша Проскоков">
+                        <img src="images\works\avatar.jpg" alt="Саша Проскоков">
                     </div>
                     <div class="about__content">
                         <p>Меня зовут Саша Проскоков, мне 23 года. Я занимаюсь дизайном инфографики и создаю визуальные решения, которые делают сложную информацию простой и понятной.</p>
@@ -73,10 +73,72 @@
                     <button class="filter-btn active" data-filter="all">Все работы</button>
                     <button class="filter-btn" data-filter="infographic">Инфографика</button>
                     <button class="filter-btn" data-filter="design">Дизайн</button>
-                    <button class="filter-btn" data-filter="other">Другое</button>
+                    <button class="filter-btn" data-filter="illustration">Иллюстрации</button>
                 </div>
-                <div class="works__grid" id="works-grid">
-                    <!-- Работы будут добавляться через JavaScript -->
+                <div class="works__grid">
+                    <!-- Инфографика -->
+                    <div class="work-card" data-category="infographic">
+                        <img src="/images/works/Frame 1 (5).png" alt="Инфографика о пиве" class="work-card__image">
+                        <div class="work-card__info">
+                            <h3 class="work-card__title">Инфографика о пиве</h3>
+                            <span class="work-card__category">Инфографика</span>
+                            <p class="work-card__description">Визуализация процесса пивоварения с акцентом на ключевые этапы производства.</p>
+                            <div class="work-card__date">Май 2025</div>
+                        </div>
+                    </div>
+
+                    <!-- Дизайн -->
+                    <div class="work-card" data-category="design">
+                        <img src="/images/works/Frame 1 (5).png" alt="Дизайн приложения" class="work-card__image">
+                        <div class="work-card__info">
+                            <h3 class="work-card__title">Мобильное приложение</h3>
+                            <span class="work-card__category">Дизайн</span>
+                            <p class="work-card__description">UI/UX дизайн приложения для трекинга здоровья с интуитивным интерфейсом.</p>
+                            <div class="work-card__date">Апрель 2025</div>
+                        </div>
+                    </div>
+
+                    <!-- Иллюстрации -->
+                    <div class="work-card" data-category="illustration">
+                        <img src="/images/works/Frame 1 (5).png" alt="Иллюстрации для книги" class="work-card__image">
+                        <div class="work-card__info">
+                            <h3 class="work-card__title">Иллюстрации для книги</h3>
+                            <span class="work-card__category">Иллюстрации</span>
+                            <p class="work-card__description">Серия иллюстраций для детской образовательной книги о природе.</p>
+                            <div class="work-card__date">Март 2025</div>
+                        </div>
+                    </div>
+
+                    <!-- Еще примеры работ -->
+                    <div class="work-card" data-category="infographic">
+                        <img src="/images/works/Frame 1 (5).png" alt="Статистика COVID-19" class="work-card__image">
+                        <div class="work-card__info">
+                            <h3 class="work-card__title">Статистика COVID-19</h3>
+                            <span class="work-card__category">Инфографика</span>
+                            <p class="work-card__description">Визуализация статистики по распространению вируса в разных странах.</p>
+                            <div class="work-card__date">Февраль 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-category="design">
+                        <img src="/images/works/Frame 1 (5).png" alt="Брендинг кафе" class="work-card__image">
+                        <div class="work-card__info">
+                            <h3 class="work-card__title">Брендинг кофейни</h3>
+                            <span class="work-card__category">Дизайн</span>
+                            <p class="work-card__description">Разработка фирменного стиля для новой кофейни в центре города.</p>
+                            <div class="work-card__date">Январь 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-category="illustration">
+                        <img src="/images/works/Frame 1 (5).png" alt="Персонажи для игры" class="work-card__image">
+                        <div class="work-card__info">
+                            <h3 class="work-card__title">Персонажи для игры</h3>
+                            <span class="work-card__category">Иллюстрации</span>
+                            <p class="work-card__description">Серия персонажей для мобильной игры в стиле flat design.</p>
+                            <div class="work-card__date">Декабрь 2024</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,7 +162,7 @@
                     <div class="contact__info">
                         <p>Вы можете связаться со мной через соцсети или мессенджеры:</p>
                         <ul class="social">
-                            <li><a href="https://web.telegram.org/k/" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+                            <li><a href="https://t.me/" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-behance"></i> Behance</a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i> Dribbble</a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
@@ -118,7 +180,7 @@
                     &copy; 2025 Smelov (Саша Проскоков)
                 </div>
                 <div class="footer__links">
-                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#" id="privacy-link">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -135,6 +197,24 @@
                     <p class="modal__category"></p>
                     <div class="modal__description"></div>
                     <div class="modal__date"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для политики -->
+    <div class="modal" id="privacy-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div class="modal__body">
+                <h2>Политика конфиденциальности</h2>
+                <div class="privacy-content">
+                    <p>Последнее обновление: Январь 2025</p>
+                    <p>1. Сбор информации: Мы собираем информацию, которую вы предоставляете при заполнении форм на сайте.</p>
+                    <p>2. Использование информации: Информация используется для связи с вами и улучшения качества наших услуг.</p>
+                    <p>3. Защита информации: Мы принимаем меры для защиты ваших персональных данных.</p>
+                    <p>4. Cookies: Сайт может использовать cookies для улучшения работы.</p>
+                    <p>5. Изменения в политике: Мы оставляем право изменять эту политику, размещая обновленную версию на сайте.</p>
                 </div>
             </div>
         </div>
