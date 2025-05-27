@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smelov | Дизайн и инфографика</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Smelov</a>
+                <nav class="nav">
+                    <a href="#about" class="nav__link">Обо мне</a>
+                    <a href="#works" class="nav__link">Работы</a>
+                    <a href="#contact" class="nav__link">Контакты</a>
+                </nav>
+                <button class="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Привет, я Саша Проскоков</h1>
+                    <p class="hero__subtitle">Дизайнер инфографики и визуальных решений</p>
+                    <a href="#works" class="btn">Посмотреть работы</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title">Обо мне</h2>
+                <div class="about__inner">
+                    <div class="about__photo">
+                        <img src="images/works/avatar.jpg" alt="Саша Проскоков">
+                    </div>
+                    <div class="about__content">
+                        <p>Меня зовут Саша Проскоков, мне 23 года. Я занимаюсь дизайном инфографики и создаю визуальные решения, которые делают сложную информацию простой и понятной.</p>
+                        <p>Мой никнейм - Smelov, а в работе я сочетаю творческий подход с аналитическим мышлением, чтобы создавать не только красивые, но и функциональные дизайны.</p>
+                        <div class="skills">
+                            <h3>Навыки:</h3>
+                            <ul class="skills__list">
+                                <li>Инфографика</li>
+                                <li>Визуализация данных</li>
+                                <li>UI/UX дизайн</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works section">
+            <div class="container">
+                <h2 class="section__title">Мои работы</h2>
+                <div class="works__filter">
+                    <button class="filter-btn active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="infographic">Инфографика</button>
+                    <button class="filter-btn" data-filter="design">Дизайн</button>
+                    <button class="filter-btn" data-filter="other">Другое</button>
+                </div>
+                <div class="works__grid" id="works-grid">
+                    <!-- Работы будут добавляться через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title">Связаться со мной</h2>
+                <div class="contact__inner">
+                    <form class="contact__form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                    <div class="contact__info">
+                        <p>Вы можете связаться со мной через соцсети или мессенджеры:</p>
+                        <ul class="social">
+                            <li><a href="https://web.telegram.org/k/" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-behance"></i> Behance</a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i> Dribbble</a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    &copy; 2023 Smelov (Саша Проскоков)
+                </div>
+                <div class="footer__links">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для работы -->
+    <div class="modal" id="work-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div class="modal__body">
+                <img src="" alt="" class="modal__image">
+                <div class="modal__info">
+                    <h3 class="modal__title"></h3>
+                    <p class="modal__category"></p>
+                    <div class="modal__description"></div>
+                    <div class="modal__date"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
